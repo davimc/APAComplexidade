@@ -37,7 +37,7 @@ public class Main {
                     Long highMemoryUsed = calculatesAverage(memoryUsed);
                     Long highTimeUsed = calculatesAverage(timeUsed);
                     result.build(n, t, c, highMemoryUsed, highTimeUsed);
-                    System.out.println("Gravando " + " Algoritmo " + t.toString() + " no " + c.toString() + " caso " + " com " + n + " elementos" + highMemoryUsed);
+                    System.out.println("Gravando " + " Algoritmo " + t.toString() + " no " + c.toString() + " caso " + " com " + n + " elementos " + highMemoryUsed);
                     System.out.println(result.toString());
                     file.saveCsv(result.toString());
                 }
