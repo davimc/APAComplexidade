@@ -1,3 +1,5 @@
+package utils;
+
 import algorithms.enums.AlgorithmTypes;
 import algorithms.enums.CaseEnum;
 import java.time.LocalDateTime;

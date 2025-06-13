@@ -1,3 +1,5 @@
+package algorithms;
+
 public class InPlaceMergeSort extends AlgorithmImpl {
 
     @Override
