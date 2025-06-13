@@ -1,5 +1,3 @@
-package algorithms;
-
 import java.util.Arrays;
 
 public class Librarysort extends AlgorithmImpl {

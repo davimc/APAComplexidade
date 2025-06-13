@@ -1,9 +1,9 @@
 package algorithms.enums;
 
-import algorithms.AlgorithmInterface;
-import algorithms.InPlaceMergeSort;
-import algorithms.Librarysort;
-import algorithms.Shellsort;
+import AlgorithmInterface;
+import InPlaceMergeSort;
+import Librarysort;
+import Shellsort;
 
 public enum AlgorithmTypes {
 

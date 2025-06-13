@@ -1,5 +1,3 @@
-package algorithms;
-
 import algorithms.enums.CaseEnum;
 
 import java.util.Random;

@@ -1,8 +1,3 @@
-package algorithms;
-
-import java.util.Arrays;
-import java.util.Random;
-
 public class Shellsort extends AlgorithmImpl {
 
     public int[] order(int[] nums) {

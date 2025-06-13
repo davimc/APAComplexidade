@@ -1,5 +1,3 @@
-package utils;
-
 import javax.swing.*;
 
 public class FileSelectorUI {
