@@ -7,7 +7,7 @@ import algorithms.Shellsort;
 
 public enum AlgorithmTypes {
 
-    INMERGE("In-Merge Sort", new InPlaceMergeSort());//,, SHELL("Shellsort", new Shellsort()),LIBRARY("Library", new Librarysort());
+    INMERGE("In-Merge Sort", new InPlaceMergeSort()), SHELL("Shellsort", new Shellsort()),LIBRARY("Library", new Librarysort());
 
     private final String desc;
     private AlgorithmInterface algorithm;
@@ -22,6 +22,15 @@ public enum AlgorithmTypes {
     }
     public AlgorithmInterface getAlgorithm() {
         return algorithm;
+    }
+
+    public static AlgorithmInterface getAlgorithmByDesc(String desc) {
+        for (AlgorithmTypes a : AlgorithmTypes.values()) {
+            if (a.getDesc().equalsIgnoreCase(desc)) {
+                return a.getAlgorithm();
+            }
+        }
+        throw new IllegalArgumentException("Algoritmo \"" + desc + "\" não existe.");
     }
 
     public AlgorithmInterface toEnum() {

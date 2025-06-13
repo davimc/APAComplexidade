@@ -6,7 +6,8 @@ import java.time.LocalDateTime;
 
 public class Result {
     private LocalDateTime date;
-    private AlgorithmTypes algorithmTypes;
+    private AlgorithmTypes algorithmTypes = null;
+    private String algorithmName;
     private int n;
     private CaseEnum caseType;
     private Long timeUsed;
@@ -29,6 +30,14 @@ public class Result {
 
     public void setAlgorithmTypes(AlgorithmTypes algorithmTypes) {
         this.algorithmTypes = algorithmTypes;
+    }
+
+    public String getAlgorithmName() {
+        return algorithmName;
+    }
+
+    public void setAlgorithmName(String algorithmName) {
+        this.algorithmName = algorithmName;
     }
 
     public int getN() {
@@ -71,10 +80,18 @@ public class Result {
         this.setMemoryUsed(memoryUsed);
         this.setTimeUsed(timeUsed);
     }
+    public void build(int n, String algorithmType, CaseEnum caseType, Long memoryUsed, Long timeUsed) {
+        this.setDate(LocalDateTime.now());
+        this.setN(n);
+        this.setAlgorithmName(algorithmType);
+        this.setCaseType(caseType);
+        this.setMemoryUsed(memoryUsed);
+        this.setTimeUsed(timeUsed);
+    }
     @Override
     public String toString() {
         return date +
-                "," + algorithmTypes.toString() +
+                "," + algorithmName +
                 "," + n +
                 "," + caseType.toString() +
                 "," + memoryUsed +
